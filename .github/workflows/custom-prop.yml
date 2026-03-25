@@ -12,11 +12,11 @@ jobs:
     name: custom prop
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: step-security/harden-runner@feature/custom-property-skip
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+      - uses: step-security/harden-runner@c51e8eeb6c4fdcd08f65e43a051dacdbfaa69702 # feature/custom-property-skip
         with:
           egress-policy: audit
-      - uses: step-security/harden-runner@feature/custom-property-skip
+      - uses: step-security/harden-runner@c51e8eeb6c4fdcd08f65e43a051dacdbfaa69702 # feature/custom-property-skip
         with:
           egress-policy: audit
           
