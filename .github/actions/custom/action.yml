@@ -11,9 +11,9 @@ runs:
   steps:
     - name: Harden Runner
       if: ${{ github.ref == 'refs/heads/xxxx' }}
-      uses: step-security/harden-runner@v2
+      uses: step-security/harden-runner@fa2e9d605c4eeb9fcad4c99c224cee0c6c7f3594 # v2.16.0
       with:
         egress-policy: audit
 
     - name: Another Action
-      uses: actions/checkout@v4
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
